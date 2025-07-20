@@ -1,18 +1,18 @@
 
 
 import React, {useState} from 'react'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import Collections from '../components/Collections'
-import Footer from '../components/Footer'
+import Header from '../Componets/Header'
+import Banner from '../Componets/Banner'
+import Collections from '../Componets/Collections'
+import Footer from '../Componets/Footer'
 
 import {Gents, Ladies} from '../data'
-import WomanCollection from '../components/WomanCollection'
+import WomanCollection from '../Componets/WomanCollection'
 
 const MainPage = () => {
 
-  const [gentsFashion, setGentsFashion] = useState(Gents)
-  const [ladiesFashion, setLadiesFashion] = useState(Ladies)
+  const [gentsFashion] = useState(Gents)
+  const [ladiesFashion] = useState(Ladies)
 
   console.log(Gents)
 
