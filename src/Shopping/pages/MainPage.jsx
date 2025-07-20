@@ -1,13 +1,13 @@
 
 
 import React, {useState} from 'react'
-import Header from '../Componets/Header'
-import Banner from '../Componets/Banner'
-import Collections from '../Componets/Collections'
-import Footer from '../Componets/Footer'
+import Header from '../Components/Header'
+import Banner from '../Components/Banner'
+import Collections from '../Components/Collections'
+import Footer from '../Components/Footer'
 
 import {Gents, Ladies} from '../data'
-import WomanCollection from '../Componets/WomanCollection'
+import WomanCollection from '../Components/WomanCollection'
 
 const MainPage = () => {
 
