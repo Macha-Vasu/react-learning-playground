@@ -1,56 +1,30 @@
-.headerSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
-}
-
-.left {
+.sectionTitle {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 20px 10px 10px;
   color: #333;
 }
 
-.center ul {
+.productGrid {
+  margin: 10px;
+}
+
+.gentsGrid {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-.center li {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.center li:hover {
-  background-color: #e9ecef;
-}
-
-.search input {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  width: 200px;
-}
-
-.right {
+.ladiesGrid {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-.right div {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.right div:hover {
-  background-color: #e9ecef;
+.productGrid img {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
 }
