@@ -1,18 +1,17 @@
 
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Collections from './components/Collections';
+import { Gents, Ladies } from '../data';
+import Footer from '../Components/Footer';
+import WomanCollection from '../Components/WomanCollection';
 
-import React, {useState} from 'react'
-import Header from '../Components/Header'
-import Banner from '../Components/Banner'
-import Collections from '../Components/Collections'
-import Footer from '../Components/Footer'
-
-import {Gents, Ladies} from '../data'
-import WomanCollection from '../Components/WomanCollection'
 
 const MainPage = () => {
 
-  const [gentsFashion] = useState(Gents)
-  const [ladiesFashion] = useState(Ladies)
+  const [gentsFashion, setGentsFashion] = useState(Gents)
+  const [ladiesFashion, setLadiesFashion] = useState(Ladies)
 
   console.log(Gents)
 
@@ -27,4 +26,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage;
+export default MainPage
