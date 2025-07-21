@@ -1,22 +1,23 @@
+/* ========== Section Titles ========== */
 .sectionTitle {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 20px 10px 10px;
+  color: #333;
 }
 
+/* ========== Product Grids ========== */
 .productGrid {
   margin: 10px;
 }
 
-/* Show vertically for gents */
 .verticalLayout {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 }
 
-/* Show horizontally for ladies */
 .horizontalLayout {
   display: flex;
   gap: 10px;
@@ -28,4 +29,73 @@
   width: 200px;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ========== Header Section ========== */
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.left .title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.center ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.center li {
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.center li:hover {
+  color: #ccc;
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+}
+
+.right div {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* ========== Responsive (Mobile) ========== */
+@media (max-width: 768px) {
+  .headerSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .center ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .horizontalLayout,
+  .verticalLayout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productGrid img {
+    width: 100%;
+    max-width: 280px;
+  }
 }
