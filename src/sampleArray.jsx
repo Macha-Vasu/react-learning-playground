@@ -20,3 +20,5 @@ const sampleArray = () => {
         </div>
     );
 }    
+
+export default sampleArray;
