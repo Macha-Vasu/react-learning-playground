@@ -1,4 +1,5 @@
 import React from 'react';
+import { userName } from './data';
 
 let fruits = ["apple", "banana", "orange", "grape"]
 
@@ -11,14 +12,23 @@ let players = [
 }
 ]
 
-const sampleArray = () => {
+const SampleArray = () => {
     return (
         <div>
-            {fruits.map((fruit, index) =>
-                <p key={index}>{fruit}</p>
-            )}
+           {userName.map((user) =>{
+                return(
+                    <div>
+                    <div>{user.email}</div>
+                    <div>{user.username}</div>
+                    </div>
+                )
+           } )
+           
+        
+        }
+
         </div>
     );
 }    
 
-export default sampleArray;
+export default SampleArray;
