@@ -20,6 +20,8 @@ const SampleArray = () => {
                     <div>
                     <div>{user.email}</div>
                     <div>{user.username}</div>
+                    <div>{user.address.street}</div> 
+
                     </div>
                 )
            } )
