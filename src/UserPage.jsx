@@ -15,7 +15,7 @@ const UserPage = () => {
         setUser(newDate);
 
     }
-    console.log(userHandler())
+    // console.log(userHandler())
 }
 
 
