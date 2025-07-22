@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, {useEffect, useState}from 'react';
 
 
 
@@ -15,7 +15,10 @@ const UserPage = () => {
         setUser(newDate);
 
     }
-    // console.log(userHandler())
+    // 
+    useEffect(()=>{
+        userHandler()
+    },[])
 }
 
 
