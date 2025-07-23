@@ -29,8 +29,15 @@ const SampleArray = () => {
         
         }
 
+
         </div>
     );
+    const [count, setCount] = useState(0);
+
+// Props - external, immutable data passed from parent
+function Child({ name, age }) {
+  return <div>{name} is {age} years old</div>;
+}
 }    
 
 export default SampleArray;
