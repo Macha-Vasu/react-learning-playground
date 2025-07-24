@@ -27,27 +27,11 @@ const SampleArray = () => {
            } )
            
         
-        }
-function Dashboard() {
-  const { data, isLoading, error } = useQuery('fetchData', fetchDashboardData);
-  
-  if (isLoading) return <Spinner />;
-  if (error) return <Error message={error.message} />;
-
-  return (
-    <div>
-      <Header />
-      <Sidebar />
-      <MainContent data={data} />
-    </div>
-  );
-}
-
-
-
+           
+       
         </div>
-    );
-    
+
+
 }    
 
 export default SampleArray;
