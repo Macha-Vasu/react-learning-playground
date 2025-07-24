@@ -12,26 +12,21 @@ let players = [
 }
 ]
 
-const SampleArray = () => {
-    return (
-        <div>
-           {userName.map((user) =>{
-                return(
-                    <div>
-                    <div>{user.email}</div>
-                    <div>{user.username}</div>
-                    <div>{user.address.street}</div> 
-
-                    </div>
-                )
-           } )
-           
-        
-           
-       
+const SampleArray = ({ userName }) => {
+  return (
+    <div>
+      {userName.map((user, index) => (
+        <div key={index}>
+          <div>{user.email}</div>
+          <div>{user.username}</div>
+          <div>{user.address.street}</div>
         </div>
+      ))}
+    </div>
+  );
+};
 
 
-}    
+   
 
 export default SampleArray;
