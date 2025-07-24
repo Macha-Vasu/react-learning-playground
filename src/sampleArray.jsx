@@ -27,11 +27,8 @@ const SampleArray = () => {
            } )
            
         
-        }for (var i = 0; i < 3; i++) {
-    (function(index) {
-        setTimeout(() => console.log(index), 100);
-    })(i);
-}
+        }
+
 
 
         </div>
